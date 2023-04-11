@@ -1,0 +1,39 @@
+﻿<Window x:Class="Banners5.AdminWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banners5"
+        mc:Ignorable="d"
+        Title="AdminWin" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="143*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="but1" Content="Компания" FontSize="30" Grid.Column="0" Click="but1_Click"/>
+            <Button x:Name="but2" Content="Заказчик" FontSize="30" Grid.Column="1" Click="but2_Click"/>
+            <Button x:Name="but3" Content="Работники" FontSize="30" Grid.Column="2" Click="but3_Click"/>
+            <Button x:Name="but4" Content="Должность" FontSize="30" Grid.Column="3" Click="but4_Click"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="but6" Content="Продукты" FontSize="30" Grid.Column="0" Click="but6_Click"/>
+            <Button x:Name="but7" Content="Локация" FontSize="30" Grid.Column="1" Click="but7_Click"/>
+            <Button x:Name="but8" Content="Команда" FontSize="30" Grid.Column="2" Click="but8_Click"/>
+        </Grid>
+        <Frame x:Name="forPage" Grid.Row="2" Margin="0,10,0,0" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>
